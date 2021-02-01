@@ -41,7 +41,7 @@ npm prod
 - [`@babel/preset-env`]
 (https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel
 - [`@babel/babel-plugin-transform-runtime`]
-(https://babeljs.io/docs/en/abel-plugin-transform-runtime) - Helper for Babel to use async/await
+(https://babeljs.io/docs/en/babel-plugin-transform-runtime) - Helper for Babel to use async/await
 - [`@babel/plugin-proposal-object-rest-spread`] 
 (https://babeljs.io/docs/en/babel-plugin-proposal-object-rest-spread) - For using rest
 - [`@babel/plugin-transform-arrow-functions`] 
