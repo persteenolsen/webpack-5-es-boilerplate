@@ -1,6 +1,6 @@
 
 const message = new Promise((resolve, reject) => {
-  setTimeout(() => resolve('Resolving an asynchronous request in a promise!'), 3000)
+  setTimeout(() => resolve('Resolved asynchronous requests by async/await'), 3000)
 })
 
 
