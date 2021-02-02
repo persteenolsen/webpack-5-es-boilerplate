@@ -25,23 +25,23 @@ const heading = document.createElement('h1')
 heading.textContent = example()
 
 const resultpromise_one = document.createElement('div')
-resultpromise_one.textContent = "Going to consume first promise  ... ";
+resultpromise_one.textContent = "Going to consume first promise from a ES function ... ";
 
 // Consuming a Promise
 message
 .then( response => {
-      resultpromise_one.textContent = response
+      resultpromise_one.innerHTML = response
 })
 
 const resultpromise_two = document.createElement('div')
-resultpromise_two.textContent = "Going to consume second promise ... ";
+resultpromise_two.innerHTML = "<br />Going to consume second promise<br />Calling jsonplaceholder api... ";
 
 // Consuming a promise inside a function with error handling true / false as arguments
 // If resolved displaying the name first and last element of the returned object
 getUsers(true)
   .then(response => {
 	  
-	resultpromise_two.innerHTML = 'Name from jsonplaceholder api: ' + response[0].name + ' - '
+	resultpromise_two.innerHTML = '<br />Name from jsonplaceholder api:<br /> ' + response[0].name + ' - '
 	resultpromise_two.innerHTML += response[2].name
    
   })

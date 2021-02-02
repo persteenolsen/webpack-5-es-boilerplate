@@ -18,7 +18,9 @@ body {
   justify-content: center;
   flex-direction: column;
   align-self: center;
-  height: 100vh;
+ 
+ // Dont need to define the height !
+ // height: 125vh;
 }
 
 h1 {
