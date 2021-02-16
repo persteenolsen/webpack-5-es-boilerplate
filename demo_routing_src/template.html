@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  
+</head>
+<body>
+
+	
+	<div id="root"></div>
+		
+      <!--To be used if the list will be generated in index.js by innerHTML-->
+      <!--<ul id="listnavbar"></ul>-->
+	
+	  <ul class="navbar-list">
+	  <li class="navbar-item"><a href="#" onclick="onNavigate('/'); return false;">Home</a></li>
+      <li class="navbar-item"><a href="#" onclick="onNavigate('/about'); return false;">About</a></li>
+      <li class="navbar-item"><a href="#" onclick="onNavigate('/contact'); return false;">Contact</a></li>
+	  	
+	  <li><a href="#" id="ahi" onclick="hi('from JS function with a global scope'); return false;">Click to Say Hi</a></li>
+	  
+    </ul>
+	
+	<!--Testing a global event listner in index.js that listen when these elements are clicked-->
+	<div id="outerdiv">
+	  Click outer div
+	  <p id="p">Click  P</p>
+	  <div id="innerdiv"> Click inner div</div>
+	</div>
+	
+
+
+	
+  
+</body>
+</html>

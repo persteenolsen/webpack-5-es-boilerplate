@@ -1,66 +1,89 @@
-// Test import of a JavaScript function - Text Heading H1
-import { example } from './js/example'
+"use strict";
 
-// Import a function returning a promise
-import { message } from './js/examplepromise'
+import Home         from './views/pages/Home.js';
+import About        from './views/pages/About.js';
+import Error404     from './views/pages/Error404.js';
+import PostShow     from './views/pages/PostShow.js';
 
-// Import a function returning a promise
-import { getUsers } from './js/examplepromise'
+import Navbar       from './views/components/Navbar.js';
+import Bottombar    from './views/components/Bottombar.js'; 
 
+import Utils        from './services/Utils.js';
 
-// Import a function returning a promise by async / await
-import { getUser } from './js/exampleasyncawait'
+import MyInfo        from './views/pages/MyInfo.js'
 
 // Test import of an asset
-import webpackLogo from './images/webpack-logo.svg'
+//import webpackLogo from './images/webpack-logo.svg';
+import webpackLogo from './images/favicon.png';
 
 // Test import of styles
 import './styles/index.scss'
 
-// Appending to the DOM
-const logo = document.createElement('img')
-logo.src = webpackLogo
 
-const heading = document.createElement('h1')
-heading.textContent = example()
-
-const resultpromise_one = document.createElement('div')
-resultpromise_one.textContent = "Going to consume first promise from a ES function ... ";
-
-// Consuming a Promise
-message
-.then( response => {
-      resultpromise_one.innerHTML = response
-})
-
-const resultpromise_two = document.createElement('div')
-resultpromise_two.innerHTML = "<br />Going to consume second promise<br />Calling jsonplaceholder api... ";
-
-// Consuming a promise inside a function with error handling true / false as arguments
-// If resolved displaying the name first and last element of the returned object
-getUsers(true)
-  .then(response => {
-	  
-	resultpromise_two.innerHTML = '<br />Name from jsonplaceholder api:<br /> ' + response[0].name + ' - '
-	resultpromise_two.innerHTML += response[2].name
-   
-  })
-  .catch(error => {
-    resultpromise_two.textContent = error
-  })
-
-
-const resultasyncawait_one = document.createElement('div')
-resultasyncawait_one.textContent = "Going to consume first promise by async / await ... ";
-
-// Note: Does work ! 
-getUser()
-.then( response => {
+// List of supported routes. Any url other than these routes will throw a 404 error
+const routes = {
 	
-      resultasyncawait_one.innerHTML = '<br />Title from jsonplaceholder api: ' + '<br />' + response['title'] + '<br />'
-	  resultasyncawait_one.innerHTML += '<br />Body from jsonplaceholder api: ' + '<br />' + response['body']
-}) 
+    '/'             : Home
+    , '/about'      : About
+	, '/myinfo'      : MyInfo
+    , '/posts/:id'      : PostShow
+   
+};
+
+	 
+// The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
+const router = async () => {
+
+	 	 
+    // Lazy load view element:
+    const header = null || document.getElementById('header_container');
+    const content = null || document.getElementById('page_container');
+    const footer = null || document.getElementById('footer_container');
+    
+    // Render the Header and footer of the page
+    header.innerHTML = await Navbar.render();
+    await Navbar.after_render();
+    footer.innerHTML = await Bottombar.render();
+    await Bottombar.after_render();
 
 
-const app = document.querySelector('#root')
-app.append( heading, logo, resultpromise_one, resultpromise_two, resultasyncawait_one)
+    // Get the parsed URl from the addressbar
+    let request = Utils.parseRequestURL()
+
+    // Parse the URL and if it has an id part, change it with the string ":id"
+    let parsedURL = (request.resource ? '/' + request.resource : '/') + (request.id ? '/:id' : '') + (request.verb ? '/' + request.verb : '')
+    
+    // Get the page from our hash of supported routes.
+    // If the parsed URL is not in our list of supported routes, select the 404 page instead
+    let page = routes[parsedURL] ? routes[parsedURL] : Error404
+    content.innerHTML = await page.render();
+    await page.after_render();
+	
+	  
+}
+
+
+// Loading Webpack logo
+const webpackimage = () => {
+    
+  // Appending to the DOM
+  const logo = document.createElement('img');
+  logo.width = "150";
+  logo.src = webpackLogo;
+  
+  const imgcontainer = document.getElementById('image_container');
+  imgcontainer.append( logo );
+
+}
+
+
+
+// Listen on page load:
+window.addEventListener('load', webpackimage );
+
+// Listen on hash change:
+window.addEventListener('hashchange', router);
+
+// Listen on page load:
+window.addEventListener('load', router);
+
