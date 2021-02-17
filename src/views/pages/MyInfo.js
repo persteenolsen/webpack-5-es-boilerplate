@@ -9,6 +9,10 @@ let MyInfo = {
 				
 				<br />
 				
+				<h2>Web Developer</h2>
+				
+				<br />
+				
 				<img width="150" alt="Per Steen Olsen" src="${myLogo}" />
 				
             </section>`

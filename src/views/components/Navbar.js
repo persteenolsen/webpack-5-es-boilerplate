@@ -1,3 +1,5 @@
+import webpackLogo from './../../images/favicon.png';
+
 let Navbar = {
     render: async () => {
         let view =  /*html*/ 
@@ -5,8 +7,10 @@ let Navbar = {
 		`
 			        
 		 <nav class="navbar navbar-expand-lg navbar-light">
-		 
-          <!--<a class="navbar-brand" href="/#/">Navigation</a>-->
+		 		  
+		   <a class="navbar-brand" href="#">
+             <img width="50" alt="Per Steen Olsen" src="${webpackLogo}" />
+           </a>
 		  
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,11 +25,15 @@ let Navbar = {
            </li>
 		   
            <li class="nav-item">
-             <a class="nav-link" href="/#/about">About</a>
+             <a class="nav-link" href="/#/about">About this App</a>
            </li>
 		   
            <li class="nav-item">
              <a class="nav-link" href="/#/myinfo">Per Steen Olsen</a>
+           </li>
+		   
+		    <li class="nav-item">
+              <a class="nav-link" href="/#/listposts">Web API</a>
            </li>
 		   
            <li class="nav-item">

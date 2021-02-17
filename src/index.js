@@ -4,6 +4,7 @@ import Home         from './views/pages/Home.js';
 import About        from './views/pages/About.js';
 import Error404     from './views/pages/Error404.js';
 import PostShow     from './views/pages/PostShow.js';
+import ListPosts     from './views/pages/ListPosts.js';
 
 import Navbar       from './views/components/Navbar.js';
 import Bottombar    from './views/components/Bottombar.js'; 
@@ -13,8 +14,8 @@ import Utils        from './services/Utils.js';
 import MyInfo        from './views/pages/MyInfo.js'
 
 // Test import of an asset
-//import webpackLogo from './images/webpack-logo.svg';
-import webpackLogo from './images/favicon.png';
+import jsLogo from './images/js.png';
+//import webpackLogo from './images/favicon.png';
 
 // Test import of styles
 import './styles/index.scss'
@@ -26,6 +27,7 @@ const routes = {
     '/'             : Home
     , '/about'      : About
 	, '/myinfo'      : MyInfo
+	, '/listposts'      : ListPosts
     , '/posts/:id'      : PostShow
    
 };
@@ -63,13 +65,13 @@ const router = async () => {
 }
 
 
-// Loading Webpack logo
-const webpackimage = () => {
+// Loading JS logo
+const loadimage = () => {
     
   // Appending to the DOM
   const logo = document.createElement('img');
   logo.width = "150";
-  logo.src = webpackLogo;
+  logo.src = jsLogo;
   
   const imgcontainer = document.getElementById('image_container');
   imgcontainer.append( logo );
@@ -78,8 +80,8 @@ const webpackimage = () => {
 
 
 
-// Listen on page load:
-window.addEventListener('load', webpackimage );
+// Loading JS logo on pageload
+window.addEventListener('load', loadimage );
 
 // Listen on hash change:
 window.addEventListener('hashchange', router);
