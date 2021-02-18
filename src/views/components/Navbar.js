@@ -9,7 +9,7 @@ let Navbar = {
 		 <nav class="navbar navbar-expand-lg navbar-light">
 		 		  
 		   <a class="navbar-brand" href="#">
-             <img width="50" alt="Per Steen Olsen" src="${webpackLogo}" />
+             <img width="50" alt="Webpack" src="${webpackLogo}" />
            </a>
 		  
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
