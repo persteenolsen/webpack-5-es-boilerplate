@@ -9,7 +9,7 @@ let MyInfo = {
 				
 				<br />
 				
-				<h2>Web Developer</h2>
+				<h3>Web Developer</h3>
 				
 				<br />
 				

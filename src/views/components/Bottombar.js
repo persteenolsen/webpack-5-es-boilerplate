@@ -5,7 +5,7 @@ let Bottombar = {
             <div class="content has-text-centered">
 			    <br />
                 <p>
-                    <h2>Webpack 5 configured to serve modern JavaScript</h2>
+                 A single page application made in Vanilla JS
                 </p>
             </div>
         </footer>

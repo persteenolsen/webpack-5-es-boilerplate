@@ -25,7 +25,7 @@ let ListPosts = {
         let posts = await getPostsList()
         let view =  /*html*/`
             <section class="section">
-                <h1> List of Posts </h1>
+                <h1> List of Posts </h1><br />
                 <ul>
                     ${ posts.map(post => 
                         /*html*/`<a href="#/posts/${post.id}">${post.title}</a><br />`

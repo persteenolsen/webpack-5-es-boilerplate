@@ -26,7 +26,7 @@ let PostShow = {
         
         return /*html*/`
             <section class="section">
-                <h1> Post Id : ${post.id}</h1>
+                <h1> Post Id : ${post.id}</h1><br />
                 <p> Post Title : ${post.title} </p>
 				<p> Post Body : ${post.body} </p>
                

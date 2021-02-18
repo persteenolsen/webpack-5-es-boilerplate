@@ -13,12 +13,11 @@ import Utils        from './services/Utils.js';
 
 import MyInfo        from './views/pages/MyInfo.js'
 
-// Test import of an asset
-import jsLogo from './images/js.png';
-//import webpackLogo from './images/favicon.png';
+// Note: For now the js logo is only loaded from the Home page
+// import jsLogo from './images/js.png';
 
 // Test import of styles
-import './styles/index.scss'
+import './styles/index.scss';
 
 
 // List of supported routes. Any url other than these routes will throw a 404 error
@@ -64,7 +63,7 @@ const router = async () => {
 	  
 }
 
-
+// Note: For now the js logo is only loaded from the Home page
 // Loading JS logo
 const loadimage = () => {
     
@@ -79,9 +78,9 @@ const loadimage = () => {
 }
 
 
-
+// Note: For now the js logo is only loaded from the Home page
 // Loading JS logo on pageload
-window.addEventListener('load', loadimage );
+// window.addEventListener('load', loadimage );
 
 // Listen on hash change:
 window.addEventListener('hashchange', router);
