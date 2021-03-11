@@ -2,7 +2,7 @@ let Bottombar = {
     render: async () => {
         let view =  /*html*/`
         <footer class="footer">
-            <div class="content has-text-centered">
+            <div>
 			    <br />
                 <p>
                  A single page application made in Vanilla JS
