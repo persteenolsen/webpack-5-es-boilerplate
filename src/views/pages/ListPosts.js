@@ -36,7 +36,8 @@ let ListPosts = {
 				  <thead>
                     <tr>
                         
-                        <th style='width: 20%'>Id</th>
+                        <th style='width: 10%'>Id</th>
+						<th style='width: 10%'></th>
                         <th style='width: '80%'>Title</th>
                         
                     </tr>
@@ -47,7 +48,7 @@ let ListPosts = {
 					Note: The loop is generating an empty row which will be removed by the join statement for making the class table-triped work -->			
                     ${ posts.map( post => 
 					
-						`<tr><td> ${post.id} </td><td><a href="#/posts/${post.id}"> ${post.title} </a></td><tr/>` 
+					`<tr><td> ${post.id}</td><td> <a href="#/editposts/${post.id}">Edit</a></td><td><a href="#/posts/${post.id}"> ${post.title} </a></td><tr/>` 
 					
 					).join('<tr></tr>') 
                     }
