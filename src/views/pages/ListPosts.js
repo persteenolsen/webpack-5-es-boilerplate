@@ -19,7 +19,7 @@ let getPostsList = async () => {
     }
 }
 
-// Silulation of delete the selected Post from the Web API and removing the Post from the GUI
+// Simulate a delete operation of the selected Post from the Web API and removing the Post from the GUI
 window.deletePost = function( id ){
 	
 	// Simulation of an error returned from the Web API	
