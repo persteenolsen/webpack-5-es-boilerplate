@@ -20,7 +20,7 @@ let About = {
                 Showing routing without any framework or library <br />
 				Handling 404 routing errors by a custom error page <br />
                 Serving static assets like images, styles and fonts <br />
-			    GET, PUT and DELETE operations towards the test Web API <br /> <br />
+			    GET, POST, PUT and DELETE operations towards the test Web API <br /> <br />
                
 			   
                 <b>Module Bundler</b> <br />

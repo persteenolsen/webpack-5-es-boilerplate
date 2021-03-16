@@ -61,6 +61,9 @@ let ListPosts = {
 		   <section class="section">
 			
                 <h1>The result of a GET Request towards a test Web API</h1><br />
+				
+				<a href='/#/createpost' target_'top' >Create a new Post</a>
+			    <br /><br />
                 
 				<div class='table-responsive'>
 				  

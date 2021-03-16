@@ -15,6 +15,8 @@ import MyInfo        from './views/pages/MyInfo.js'
 
 import PostEdit     from './views/pages/PostEdit.js';
 
+import PostCreate     from './views/pages/PostCreate.js';
+
 // Note: For now the js logo is only loaded from the Home page
 // import jsLogo from './images/js.png';
 
@@ -31,6 +33,7 @@ const routes = {
 	, '/listposts'      : ListPosts
     , '/posts/:id'      : PostShow
 	, '/editposts/:id'      : PostEdit
+	, '/createpost'      : PostCreate
    
 };
 
