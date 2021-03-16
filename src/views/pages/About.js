@@ -11,7 +11,7 @@ let About = {
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                11-03-2021 <br /> <br />
+                16-03-2021 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
@@ -20,7 +20,7 @@ let About = {
                 Showing routing without any framework or library <br />
 				Handling 404 routing errors by a custom error page <br />
                 Serving static assets like images, styles and fonts <br />
-			    Consuming JSON data from a test Web API <br /> <br />
+			    GET, PUT and DELETE operations towards the test Web API <br /> <br />
                
 			   
                 <b>Module Bundler</b> <br />
