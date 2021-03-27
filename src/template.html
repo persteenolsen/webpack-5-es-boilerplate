@@ -15,7 +15,10 @@
 
 <body>
 
-
+   
+     <noscript>
+      <strong>This ES 6+ App do not work properly without JavaScript enabled. Please enable it to continue.</strong>
+     </noscript>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -44,6 +47,21 @@
        </div>
     </div>
   
+   
+	<script type="application/javascript">
+      
+	  // Showing a message to the User if not using Google Chrome !
+	  if (  ! (/Chrome/.test(window.navigator.userAgent ))){ 
+	  
+	      //window.location.href = '/ie.html';
+	      // Setting the GUI with the value returned from the Web API
+		  document.getElementById("header_container").innerHTML = "";
+	      document.getElementById("page_container").innerHTML = "<br /><b>Please try the Google Chrome Browser when using this ES 6+ App !</b>";
+		  document.getElementById("image_container").innerHTML = "";
+		  document.getElementById("footer_container").innerHTML = "";
+	     }
+		 
+	</script>
 
 </body>
     
