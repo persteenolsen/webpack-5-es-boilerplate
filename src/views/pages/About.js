@@ -11,12 +11,13 @@ let About = {
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                16-03-2021 <br /> <br />
+                29-03-2021 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
                 				                 
 			    Showing some of the power of Webpack <br />
+				Adding partly support for some older Browsers like IE 11<br />
                 Showing routing without any framework or library <br />
 				Handling 404 routing errors by a custom error page <br />
                 Serving static assets like images, styles and fonts <br />

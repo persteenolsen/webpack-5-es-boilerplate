@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     	
 	 <title>Webpack 5 and JavaScript</title>
+	
 	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
@@ -30,7 +31,9 @@
       <div class="container">
         <div class="row">
             <div class="col-sm-6 offset-sm-3">
-   	
+   	          
+			  <div id="nocrome_container"></div>
+			   
 	          <div id="header_container"></div>
 						
               <div id="page_container">
@@ -53,12 +56,14 @@
 	  // Showing a message to the User if not using Google Chrome !
 	  if (  ! (/Chrome/.test(window.navigator.userAgent ))){ 
 	  
-	      //window.location.href = '/ie.html';
+        // alert('This ES6+ App may run best with Google Crome ! ');
+		  document.getElementById("nocrome_container").innerHTML = "<br /><b>Please try the Google Chrome Browser when using this ES 6+ App !</b><br />";
+		  
 	      // Setting the GUI with the value returned from the Web API
-		  document.getElementById("header_container").innerHTML = "";
+		 /* document.getElementById("header_container").innerHTML = "";
 	      document.getElementById("page_container").innerHTML = "<br /><b>Please try the Google Chrome Browser when using this ES 6+ App !</b>";
 		  document.getElementById("image_container").innerHTML = "";
-		  document.getElementById("footer_container").innerHTML = "";
+		  document.getElementById("footer_container").innerHTML = ""; */
 	     }
 		 
 	</script>

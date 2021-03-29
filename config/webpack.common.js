@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   // Where webpack looks to start building the bundle
-  entry: [ paths.src + '/index.js'],
+  entry: [ 'whatwg-fetch', paths.src + '/index.js'],
 
   // Where webpack outputs the assets and bundles
   output: {
@@ -14,7 +14,9 @@ module.exports = {
     filename: '[name].bundle.js',
     publicPath: '/',
   },
-
+  
+  target: ['web', 'es5'], 
+  
   // Customize the webpack build process
   plugins: [
     // Removes/cleans build folders and unused assets when rebuilding

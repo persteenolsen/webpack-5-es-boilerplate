@@ -47,6 +47,8 @@
     "url": "https://github.com/persteenolsen/webpack-5-es-boilerplate"
   },
   "dependencies": {
-    "@babel/runtime": "^7.12.5"
+    "@babel/runtime": "^7.12.5",
+    "core-js": "^3.9.1",
+    "whatwg-fetch": "^3.6.2"
   }
 }
