@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   // Where webpack looks to start building the bundle
   entry: [ 'whatwg-fetch', paths.src + '/index.js'],
-
+ 
   // Where webpack outputs the assets and bundles
   output: {
     path: paths.build,
@@ -15,9 +15,7 @@ module.exports = {
     publicPath: '/',
   },
   
-  // Magic happen here trnaanspiling to es5 to partly support older browser like IE11 
-  target: ['web', 'es5'], 
-  
+    
   // Customize the webpack build process
   plugins: [
     // Removes/cleans build folders and unused assets when rebuilding
