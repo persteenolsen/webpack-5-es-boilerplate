@@ -26,7 +26,7 @@ window.editPost = function(){
 	 var title = document.getElementById("titleInput").value;
 	 var body = document.getElementById("bodyTextarea").value;
 	
-	//alert( id + '\r\n\r\n' +  title + '\r\n\r\n' + body );
+	 alert( 'Input Submit:\r\n\r\n' + id + '\r\n\r\n' + title + '\r\n\r\n' + body );
 	
 	 // Making the PUT request to the web API
 	 fetch('https://jsonplaceholder.typicode.com/posts/' + id, {
@@ -69,7 +69,7 @@ let PostEdit = {
         return /*html*/`
             <section class="section">
 			
-                <h1>Edit simulation of the selected Post</h1>
+                <h2>Edit simulation of the selected Post</h2>
 				
 				 <br />
 			     Edit simulation of the Post with Id: <b>${post.id}</b>
@@ -80,30 +80,19 @@ let PostEdit = {
 								
 				<div class="table-responsive">
            
-		          <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        
-                        <th style='width: 10%'>Id</th>
-                        <th style='width: 30%'>Title</th>
-						<th style='width: 60%'>Body</th>
-                        
-                       </tr>
-                     </thead>
-                    <tbody>
-								                         
-						<tr>
-                            <td><p id='idp'>${post.id}</p></td>
-                            <td><input id='titleInput' size='12' type='text' value='${post.title}'></td>
-							<td><textarea id='bodyTextarea' rows='5'>${post.body}</textarea></td>
-
-                        </tr>
-						
-						<tr><td colspan='3'><button type="button" class="btn btn-warning custom-text-color-button" onclick="editPost()">Edit</button></tr>
-                   					
-					</tbody>
-				 </table>
-				
+		          <b>Id:</b><br/>
+				  <p id='idp'>${post.id}</p>
+                  
+				  <b>Title:</b><br/>
+				  <input id='titleInput' size='25' type='text' value='${post.title}'>
+				  
+				  <br /><br />
+				  <b>Body:</b><br/>
+				  <textarea id='bodyTextarea' cols='30' rows='4'>${post.body}</textarea>
+                   
+				  <br /><br />
+                  <button type="button" class="btn btn-warning custom-text-color-button" onclick="editPost()">Edit</button>
+                 				
               </div>
 			               
             </section>

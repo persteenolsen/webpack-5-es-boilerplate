@@ -6,7 +6,7 @@ let Home = {
 		
 		  `<section class="section">
 			
-                <h1>Welcome</h1>
+                <h2>Welcome</h2>
 				
 				<br />
 				

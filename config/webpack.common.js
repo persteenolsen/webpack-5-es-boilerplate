@@ -15,6 +15,7 @@ module.exports = {
     publicPath: '/',
   },
   
+  // Magic happen here trnaanspiling to es5 to partly support older browser like IE11 
   target: ['web', 'es5'], 
   
   // Customize the webpack build process

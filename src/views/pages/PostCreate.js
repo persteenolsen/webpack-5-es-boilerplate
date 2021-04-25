@@ -7,7 +7,7 @@ window.createPost = function(){
 	 var title = document.getElementById("titleInput").value;
 	 var body = document.getElementById("bodyTextarea").value;
 	
-	//alert( id + '\r\n\r\n' +  title + '\r\n\r\n' + body );
+	 alert( 'Input Submit:\r\n\r\n' + title + '\r\n\r\n' + body );
 	
 	 // Making the POST request to the web API
 	 fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -49,40 +49,29 @@ let PostCreate = {
         return /*html*/`
             <section class="section">
 			
-                <h1>Create simulation of a new Post</h1>
+                <h2>Create simulation of a new Post</h2>
 				
-				<br /> <br />
-			 
+				<br /> 
+				
 			    <a href='/#/listposts' target_'top' >Show the 10 Posts again</a>
 			    <br /><br />
 								
 				<div class="table-responsive">
-           
-		          <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        
-                        <th style='width: 10%'>Id</th>
-                        <th style='width: 30%'>Title</th>
-						<th style='width: 60%'>Body</th>
-                        
-                       </tr>
-                     </thead>
-                    <tbody>
-								                         
-						<tr>
-                            <td><p id='idp'></p></td>
-                            <td><input id='titleInput' size='12' type='text' value='Enter a title'></td>
-							<td><textarea id='bodyTextarea' rows='5'>Enter content</textarea></td>
-
-                        </tr>
-						
-						<tr><td colspan='3'><button type="button" class="btn btn-warning custom-text-color-button" onclick="createPost()">Create</button></tr>
-                   					
-					</tbody>
-				 </table>
-				
-              </div>
+				      
+                     <b>Id:</b><br/>					  
+                     <p id='idp'></p>
+					 
+					 <b>Title:</b><br/>
+                     <input id='titleInput' size='25' type='text' value='Enter a title'>
+					 
+					 <br /><br />
+				     <b>Body:</b><br/>
+					 <textarea id='bodyTextarea' cols='30' rows='4'>Enter content</textarea>
+                      
+                     <br /><br />					  
+					 <button type="button" class="btn btn-warning custom-text-color-button" onclick="createPost()">Create</button>
+                
+				</div>
 			               
             </section>
         `

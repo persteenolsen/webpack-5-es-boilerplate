@@ -22,9 +22,11 @@ let getPostsList = async () => {
 // Simulate a delete operation of the selected Post from the Web API and removing the Post from the GUI
 window.deletePost = function( id ){
 	
-	// Simulation of an error returned from the Web API	
-	// fetch('https://jsonplaceholder.typicode.com/invalid-url', { method: 'DELETE' })
-	fetch('https://jsonplaceholder.typicode.com/posts/' + id, { method: 'DELETE' })
+	if (confirm('Are you sure?')) {
+	      
+		  // Simulation of an error returned from the Web API	
+	      // fetch('https://jsonplaceholder.typicode.com/invalid-url', { method: 'DELETE' })
+	      fetch('https://jsonplaceholder.typicode.com/posts/' + id, { method: 'DELETE' })
         
 		 .then(async response => {
              const data = await response.json();
@@ -41,14 +43,14 @@ window.deletePost = function( id ){
 			// Simulation of an delete operation by removing the selected Post from the GUI
 			document.getElementById(id).outerHTML = "";
 			
-        })
-        .catch(error => {
+         })
+         .catch(error => {
            
             console.error('There was an error!', error);
 			alert( 'Following error was returned from the Web API: ' + error );
 			
         });
-		
+	}
 	
  } 
 
@@ -60,7 +62,7 @@ let ListPosts = {
            
 		   <section class="section">
 			
-                <h1>The result of a GET Request towards a test Web API</h1><br />
+                <h2>The result of a GET Request towards a test Web API</h2><br />
 				
 				<a href='/#/createpost' target_'top' >Create a new Post</a>
 			    <br /><br />

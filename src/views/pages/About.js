@@ -5,13 +5,13 @@ let About = {
             <section class="section">
 			
 			            		  
-                <h1>Description</h1><br />
+                <h2>Description</h2><br />
   
                 This single page application was made in plain JavaScript with a Webpack 5 configuration
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                29-03-2021 <br /> <br />
+                25-04-2021 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />

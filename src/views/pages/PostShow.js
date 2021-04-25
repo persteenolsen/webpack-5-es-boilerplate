@@ -27,7 +27,7 @@ let PostShow = {
         return /*html*/`
             <section class="section">
 			
-                <h1>The selected Post from the Web API</h1>
+                <h2>The selected Post from the Web API</h2>
 				
 				 <br />
 			     You selected a Post with Id: <b>${post.id}</b>

@@ -5,7 +5,7 @@ let MyInfo = {
         let view =  /*html*/
 		    `<section class="section">
 			
-                <h1> Per Steen Olsen</h1>
+                <h2> Per Steen Olsen</h2>
 				
 				<br />
 				
