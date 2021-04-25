@@ -50,7 +50,7 @@ npm prod
 (https://babeljs.io/docs/en/babel-plugin-transform-async-to-generator) - To use async and generators
 
 
-# Loaders
+# Some Loaders 
 
 - [`babel-loader`](https://webpack.js.org/loaders/babel-loader/) - Transpile files - Babel/webpack
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
