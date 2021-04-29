@@ -11,12 +11,13 @@ let About = {
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                25-04-2021 <br /> <br />
+                29-04-2021 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
                 				                 
-			    Showing some of the power of Webpack <br />
+			    Showing the power of Webpack <br />
+				Hot Reload / HMR by Webpack Dev Server<br />
 				Adding partly support for some older Browsers like IE 11<br />
                 Showing routing without any framework or library <br />
 				Handling 404 routing errors by a custom error page <br />

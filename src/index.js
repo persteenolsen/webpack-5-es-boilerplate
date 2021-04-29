@@ -10,11 +10,8 @@ import Navbar       from './views/components/Navbar.js';
 import Bottombar    from './views/components/Bottombar.js'; 
 
 import Utils        from './services/Utils.js';
-
 import MyInfo        from './views/pages/MyInfo.js'
-
 import PostEdit     from './views/pages/PostEdit.js';
-
 import PostCreate     from './views/pages/PostCreate.js';
 
 // Note: For now the js logo is only loaded from the Home page
@@ -40,7 +37,6 @@ const routes = {
 	 
 // The router code. Takes a URL, checks against the list of supported routes and then renders the corresponding content page.
 const router = async () => {
-
 	 	 
     // Lazy load view element:
     const header = null || document.getElementById('header_container');
@@ -53,7 +49,6 @@ const router = async () => {
     footer.innerHTML = await Bottombar.render();
     await Bottombar.after_render();
 
-
     // Get the parsed URl from the addressbar
     let request = Utils.parseRequestURL()
 
@@ -65,9 +60,26 @@ const router = async () => {
     let page = routes[parsedURL] ? routes[parsedURL] : Error404
     content.innerHTML = await page.render();
     await page.after_render();
-	
-	  
+		  
 }
+
+
+// Listen on hash change:
+window.addEventListener('hashchange', router);
+
+// Listen on page load:
+window.addEventListener('load', router);
+
+// If webpack-dev-server listens for Hot Reload / HMR
+if (module.hot) {
+    
+	// With this statement HMR is actived else Hot Reload
+    module.hot.accept();
+    
+	// Calling the router to load the module you are changing by HMR 
+    router();
+}
+
 
 // Note: For now the js logo is only loaded from the Home page
 // Loading JS logo
@@ -83,14 +95,9 @@ const loadimage = () => {
 
 }
 
-
 // Note: For now the js logo is only loaded from the Home page
 // Loading JS logo on pageload
 // window.addEventListener('load', loadimage );
 
-// Listen on hash change:
-window.addEventListener('hashchange', router);
 
-// Listen on page load:
-window.addEventListener('load', router);
 

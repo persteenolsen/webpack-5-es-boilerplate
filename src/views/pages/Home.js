@@ -2,6 +2,7 @@ import jsLogo from './../../images/js.png';
 
 let Home = {
     render : async () => {
+		
         let view =  /*html*/ 
 		
 		  `<section class="section">
@@ -13,6 +14,9 @@ let Home = {
 				<img width="150" alt="JS - ES" src="${jsLogo}" />
 				
 				<br />
+				
+				<!--Test-->
+				<!--<p><span class="test">Hey dude...</span></p>-->
 				
 				<h2>Webpack 5 configured from scratch to serve modern JavaScript</h2>
 				
