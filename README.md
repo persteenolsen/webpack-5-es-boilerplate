@@ -44,7 +44,6 @@ Sensible webpack 5 boilerplate using Babel, PostCSS and Sass with a hot dev serv
 
 - [`@babel/core`](https://www.npmjs.com/package/@babel/core) - Transpile ES6+ to ES5
 - [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel
-- [`@babel/preset-react`](https://babeljs.io/docs/en/babel-preset-react) - Defaults Babel React
 - [`@babel/plugin-transform-runtime`](https://babeljs.io/docs/en/babel-plugin-transform-runtime) - Babel to use async/await
 - [`@babel/plugin-proposal-object-rest-spread`](https://babeljs.io/docs/en/plugin-proposal-object-rest-spread) - Babel helper
 - [`@babel/plugin-transform-arrow-functions`](https://babeljs.io/docs/en/plugin-transform-arrow-functions) - For arrow functions
