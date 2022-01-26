@@ -11,11 +11,12 @@ let About = {
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                - 06-10-2021 <br /> <br />
+                - 26-01-2022 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
-                				                 
+                	
+                - Upgraded from Node 12.16 to Node 14.17 <br />					
 			    - Showing the power of Webpack <br />
 				- Hot Reload / HMR by Webpack Dev Server<br />
 				- Adding support for some older Browsers like IE 11<br />
