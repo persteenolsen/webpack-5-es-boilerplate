@@ -11,7 +11,7 @@ let About = {
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                - 16-07-2023 <br /> <br />
+                - 09-10-2023 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
