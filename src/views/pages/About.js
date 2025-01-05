@@ -10,13 +10,13 @@ let About = {
                 - This single page application was made in plain JavaScript with a Webpack 5 configuration
                 <br/> <br/>
 				
-                <b>Last Updated</b>  <br />
-                - 18-08-2024 <br /> <br />
+                <b>Last Updated:</b>  <br />
+                - 05-01-2025 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
                 	
-                - Upgraded from Node 12.16 to Node 14.17 <br />					
+                - Upgraded from Node 12.16 => Node 14.17 => 20.18.1<br />					
 			    - Showing the power of Webpack <br />
 				- Hot Reload / HMR by Webpack Dev Server<br />
 				- Adding support for some older Browsers like IE 11<br />
