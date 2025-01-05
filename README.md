@@ -4,7 +4,7 @@ Sensible webpack 5 boilerplate using Babel, PostCSS and Sass with a hot dev serv
 
 Last updated: 05-01-2025
 
-Node Version: 20-18.1
+Node Version: 20.18.1
 
 # Usage
 
