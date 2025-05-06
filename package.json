@@ -16,7 +16,7 @@
     "webpack boilerplate"
   ],
   "devDependencies": {
-      "@babel/core": "^7.26.0",
+    "@babel/core": "^7.26.0",
     "@babel/plugin-transform-class-properties": "^7.25.9",
     "@babel/plugin-transform-object-rest-spread": "^7.25.9",
     "@babel/plugin-transform-arrow-functions": "^7.25.9",
