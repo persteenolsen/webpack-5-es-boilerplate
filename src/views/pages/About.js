@@ -11,15 +11,15 @@ let About = {
                 <br/> <br/>
 				
                 <div class="test"><b>Last Updated:</b></div>
-                - 06-05-2025 <br /> <br />
+                - 07-05-2025 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
                 	
-                - Upgraded from Node 12.16 => Node 14.17 => 20.18.1<br />					
+                - Upgraded from Node 12.16 => Node 14.17 => 20.18.1 => 22.15.0<br />					
 			    - Showing the power of Webpack <br />
 				- Hot Reload / HMR by Webpack Dev Server<br />
-				- Adding support for some older Browsers like IE 11<br />
+				- Partly support for some older Browsers<br />
                 - Showing routing without any framework or library <br />
 				- Handling 404 routing errors by a custom error page <br />
                 - Serving static assets like images, styles and fonts <br />

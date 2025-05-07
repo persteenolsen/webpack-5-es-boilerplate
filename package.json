@@ -38,7 +38,6 @@
     "sass": "^1.83.0",
     "sass-loader": "^16.0.4",
     "style-loader": "^4.0.0",
-    
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0",
@@ -54,6 +53,6 @@
     "whatwg-fetch": "^3.6.20"
   },
   "volta": {
-    "node": "20.18.1"
+    "node": "22.15.0"
   }
 }
