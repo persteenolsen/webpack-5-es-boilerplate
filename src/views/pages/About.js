@@ -11,12 +11,12 @@ let About = {
                 <br/> <br/>
 				
                 <div class="test"><b>Last Updated:</b></div>
-                - 18-02-2026 <br /> <br />
+                - 19-02-2026 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
                 	
-                - Upgraded from Node 12.16 => Node 14.17 => 20.18.1 => 22.15.0<br />					
+                - Upgraded from Node 12.16 => Node 14.17 => 20.18.1 => 22.15.0 => 24.13.0<br />					
 			    - Showing the power of Webpack <br />
 				- Hot Reload / HMR by Webpack Dev Server<br />
 				- Partly support for some older Browsers<br />
