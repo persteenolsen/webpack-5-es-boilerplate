@@ -2,7 +2,7 @@
 
 Sensible webpack 5 boilerplate using Babel, PostCSS and Sass with a hot dev server and an optimized production build.
 
-Last updated: 19-02-2026
+Last updated: 04-06-2026
 
 Node Version: 24.13.0
 
