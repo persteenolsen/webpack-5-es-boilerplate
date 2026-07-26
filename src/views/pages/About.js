@@ -11,7 +11,7 @@ let About = {
                 <br/> <br/>
 				
                 <div class="test"><b>Last Updated:</b></div>
-                - 04-06-2026 <br /> <br />
+                - 26-07-2026 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
